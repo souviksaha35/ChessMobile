@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import { TouchableWithoutFeedback, StyleSheet } from 'react-native';
-import {Text} from 'react-Native-paper';
+import {Text} from 'react-native-paper';
 
 
 export class Square extends Component {
@@ -17,7 +17,7 @@ export class Square extends Component {
     reverseBoard: PropTypes.bool,
     inCheck: PropTypes.bool,
     lastMove: PropTypes.bool,
-    onSelected: PropTypes.func.isRequired,
+    onSelected: PropTypes.func,
   }
 
   onSelected = () => {

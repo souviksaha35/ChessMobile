@@ -12,13 +12,11 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <PaperProvider>
-      <View style={styles.container}>
         <NavigationContainer>
           <Stack.Navigator>
             <Stack.Screen name="PlayerVsFriend" component={PlayVsFriendScreen}/>
           </Stack.Navigator>
         </NavigationContainer>
-      </View>
     </PaperProvider>
   );
 }
